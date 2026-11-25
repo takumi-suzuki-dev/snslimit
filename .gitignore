@@ -1,0 +1,53 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env
+.env*.local
+
+# files moved aside instead of deleted (global rule: never delete, move to _trash/)
+_trash/
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# targets/ is kept in git since 11/9 (copyToTargetFolder: false in app.json),
+# because snslimit adds its own code to the extensions
+
+# not published (11/25): YouTube transcripts are others' copyrighted work,
+# stage5-users.md has names of real people. Both stay on this PC only.
+docs/sources/
+docs/stage5-users.md
